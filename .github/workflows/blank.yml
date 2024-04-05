@@ -18,6 +18,12 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+    # Variables de entorno que se van a utilizar en nuestro workflow
+    env:
+      plattform: GCP
+      region: us-central1
+      account: 123456789
+
     # Nos crea una maquina virtual con el sistema operativo ubuntu para ejecutar las tareas de nuestro workflow
     runs-on: ubuntu-latest
 
@@ -27,3 +33,12 @@ jobs:
       - name: "Display Message"
         # Comando que se va a ejecutar en nuestra tarea
         run: echo "Hello World"
+
+      # Nombre nuestra segunda tarea
+      - name: "Mostrando variables de entorno"
+        # Comando que se va a ejecutar en nuestra tarea || Esta lo que hace es mostrar las variables de entorno que hemos definido en nuestro workflow
+        # Se coloca un "|" para que se pueda ejecutar más de un comando en un solo run. Se conoce como PIPE
+        run: |
+          echo "Esto es el valor de plattform: ${{env.plattform}}"
+          echo "Esto es el valor de region: ${{env.region}}"
+          echo "Esto es el valor de account:: ${{env.account}}"
