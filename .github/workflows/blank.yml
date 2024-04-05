@@ -24,6 +24,10 @@ jobs:
       region: us-central1
       account: 123456789
 
+      # Asignamos unos secrets a nuestras variables de entorno del Workflow
+      username: ${{secrets.USERNAME}}
+      password: ${{secrets.PASSWORD}}
+
     # Nos crea una maquina virtual con el sistema operativo ubuntu para ejecutar las tareas de nuestro workflow
     runs-on: ubuntu-latest
 
@@ -61,3 +65,9 @@ jobs:
           echo "Evento: ${{toJson(github.event)}}"
           echo "GitHub Actor: $GITHUB_ACTOR" 
           echo "GitHub Repository: $GITHUB_REPOSITORY"
+      
+      # Nombre nuestra quinta tarea
+      - name: "Mostrando los secrets de GitHub"
+        run: |
+          echo "Username: ${{env.username}}"
+          echo "Password: ${{env.password}}"
