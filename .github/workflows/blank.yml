@@ -52,3 +52,8 @@ jobs:
           echo "Esto es el valor de plattform: ${{env.plattform}}"
           echo "Esto es el valor de region: ${{env.region}}"
           echo "Esto es el valor de account:: ${{env.account}}"
+
+      # Nombre nuestra cuarta tarea
+      - name: "Mostrando varibales de entorno por defecto de GitHub"
+        run: |
+          echo "Evento: ${{toJson(github.event)}}"
