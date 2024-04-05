@@ -71,3 +71,8 @@ jobs:
         run: |
           echo "Username: ${{env.username}}"
           echo "Password: ${{env.password}}"
+      
+      # Nombre nuestra sexta tarea
+      - name: "Mostrando las variables del Repositorio"
+        run: |
+          echo " ID del projecto: ${{vars.project_id}}"
