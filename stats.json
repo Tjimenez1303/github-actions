@@ -1,0 +1,281 @@
+{
+    "challenges_total": 0,
+    "languages_total": 14,
+    "files_total": 35,
+    "users_total": 31,
+    "challenges_ranking": [],
+    "languages_ranking": [
+        {
+            "order": 1,
+            "name": "hooks",
+            "count": 14,
+            "percentage": 40.0
+        },
+        {
+            "order": 2,
+            "name": ".git",
+            "count": 6,
+            "percentage": 17.14
+        },
+        {
+            "order": 3,
+            "name": "workflows",
+            "count": 2,
+            "percentage": 5.71
+        },
+        {
+            "order": 4,
+            "name": "heads",
+            "count": 2,
+            "percentage": 5.71
+        },
+        {
+            "order": 5,
+            "name": "origin",
+            "count": 2,
+            "percentage": 5.71
+        },
+        {
+            "order": 6,
+            "name": "98",
+            "count": 1,
+            "percentage": 2.86
+        },
+        {
+            "order": 7,
+            "name": "f6",
+            "count": 1,
+            "percentage": 2.86
+        },
+        {
+            "order": 8,
+            "name": "4b",
+            "count": 1,
+            "percentage": 2.86
+        },
+        {
+            "order": 9,
+            "name": "d6",
+            "count": 1,
+            "percentage": 2.86
+        },
+        {
+            "order": 10,
+            "name": "d4",
+            "count": 1,
+            "percentage": 2.86
+        },
+        {
+            "order": 11,
+            "name": "8d",
+            "count": 1,
+            "percentage": 2.86
+        },
+        {
+            "order": 12,
+            "name": "f1",
+            "count": 1,
+            "percentage": 2.86
+        },
+        {
+            "order": 13,
+            "name": "info",
+            "count": 1,
+            "percentage": 2.86
+        },
+        {
+            "order": 14,
+            "name": "logs",
+            "count": 1,
+            "percentage": 2.86
+        }
+    ],
+    "users_ranking": [
+        {
+            "order": 1,
+            "name": "main",
+            "count": 4,
+            "languages": 2
+        },
+        {
+            "order": 2,
+            "name": "head",
+            "count": 2,
+            "languages": 2
+        },
+        {
+            "order": 3,
+            "name": "blank",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 4,
+            "name": "create stats",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 5,
+            "name": "shallow",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 6,
+            "name": "fetch_head",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 7,
+            "name": "index",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 8,
+            "name": "config",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 9,
+            "name": "description",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 10,
+            "name": "a04520b2146257e923af684425d39a7ddc31b3",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 11,
+            "name": "65ad47ae43fbabfa2463d08b38dbbd291f5b2a",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 12,
+            "name": "0143e22981179d42cf81439d40533f6bf5eb1b",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 13,
+            "name": "c9b7c26be95840d6b5bb66e2f079ae9ec581c9",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 14,
+            "name": "c5f2cbe786951d2f264a85a29fdc26f3cf9ce5",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 15,
+            "name": "4f1fd960745679af7f52162b0795a64d7bf273",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 16,
+            "name": "8248e3cb5f084f10f7ce6780fbec2dedac7e13",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 17,
+            "name": "pre-receive",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 18,
+            "name": "fsmonitor-watchman",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 19,
+            "name": "update",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 20,
+            "name": "pre-merge-commit",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 21,
+            "name": "post-update",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 22,
+            "name": "push-to-checkout",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 23,
+            "name": "pre-applypatch",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 24,
+            "name": "pre-rebase",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 25,
+            "name": "applypatch-msg",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 26,
+            "name": "commit-msg",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 27,
+            "name": "prepare-commit-msg",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 28,
+            "name": "pre-commit",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 29,
+            "name": "pre-push",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 30,
+            "name": "sendemail-validate",
+            "count": 1,
+            "languages": 1
+        },
+        {
+            "order": 31,
+            "name": "exclude",
+            "count": 1,
+            "languages": 1
+        }
+    ]
+}
