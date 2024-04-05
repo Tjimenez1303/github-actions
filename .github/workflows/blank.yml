@@ -20,7 +20,7 @@ jobs:
   build:
     # Variables de entorno que se van a utilizar en nuestro workflow
     env:
-      plattform: GCP
+      plattform: aws
       region: us-central1
       account: 123456789
 
