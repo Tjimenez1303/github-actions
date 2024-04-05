@@ -16,7 +16,7 @@ on:
 
 # Serie de tareas que se van a ejecutar en nuestro workflow
 jobs:
-  # This workflow contains a single job called "build"
+  # Indica cual es todo el proceso de construcción de nuestro workflow
   build:
     # Variables de entorno que se van a utilizar en nuestro workflow
     env:
