@@ -42,3 +42,13 @@ jobs:
           echo "Esto es el valor de plattform: ${{env.plattform}}"
           echo "Esto es el valor de region: ${{env.region}}"
           echo "Esto es el valor de account:: ${{env.account}}"
+
+      # Nombre nuestra tercera tarea
+      - name: "Utilizando los condicionales"
+        # Se pueden utilizar condicionales para ejecutar tareas en nuestro workflow si se cumple una condición
+        # En este caso se va a ejecutar si la variable de entorno plattform es igual a GCP
+        if: ${{env.plattform == 'GCP'}}
+        run: |
+          echo "Esto es el valor de plattform: ${{env.plattform}}"
+          echo "Esto es el valor de region: ${{env.region}}"
+          echo "Esto es el valor de account:: ${{env.account}}"
