@@ -55,5 +55,9 @@ jobs:
 
       # Nombre nuestra cuarta tarea
       - name: "Mostrando varibales de entorno por defecto de GitHub"
+        # Se pueden utilizar las variables de entorno por defecto de GitHub para mostrar información de los eventos que se han ejecutado
+        # Las variables de GitHub se colocan con el prefijo GITHUB_ y en mayúsculas y no se necesita colocarles el {{env.}}
         run: |
           echo "Evento: ${{toJson(github.event)}}"
+          echo "GitHub Actor: $GITHUB_ACTOR" 
+          echo "GitHub Repository: $GITHUB_REPOSITORY"
