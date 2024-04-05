@@ -1,0 +1,41 @@
+name: Stats
+
+on:
+  push: 
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Como en el paso de "Commit and Push Changes" debemos subir al repositorio el JSON que genera el script de Python se deben de dar permisos de escribir (ESTO LO DA LA DOCUMENTACIÓN)
+    permissions: 
+      contents: write
+    
+    steps: 
+      - name: Checkout repo
+      # Hacemos un checkout de mi repositorio utlizando un action ya hecho
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        # Configuramos python utilizando un action ya hecho
+        uses: actions/setup-python@v5
+        # Le indiciamos la versión que quiero de Python
+        with:
+          python-version: '3.11'
+      - name: Run Script
+        # Ahora que ya tenemos el entorno de Python configurado y ya tiene mi info del repositorio debemos ejecutar el script
+        run: python ./stats.py # Si lo tengo dentro de alguna carpeta: ./ -> Raíz (siempre va) + /Carpeta1/Carpeta2/Archivo -> ./Roadmap/stats.py
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with: 
+          # Modificamos para que el mensaje del commit sea "Update stats"
+          commit_message: Update stats
+          # Modificamos el nombre de usuario que hace el commit
+          commit_user_name: Tomas Jimenez [Github Actions]
+          # Modificamos el email del usuario que hace el commit
+          commit_user_email: tjimenez@unal.edu.co
+          # Modificamos el autor que hace el commit
+          commit_author: tjimenez
+          
