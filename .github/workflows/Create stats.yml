@@ -2,12 +2,11 @@ name: Stats
 
 on:
   # Cada vez que se haga un push a la rama main se ejecutará el workflow
-  # push: 
-  #   branches: [ main ]
-  # 
-  schedule:
+  push: 
+    branches: [ main ] 
+  # schedule:
     # Cada vez que sea la medianoche se ejecutará el workflow || minuto hora dia mes dia_semana
-    - cron: '0 0 * * *'
+    # - cron: '0 0 * * *'
 
 jobs:
   build:
